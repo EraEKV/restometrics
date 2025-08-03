@@ -1,0 +1,1 @@
+export { RestaurantSuccess } from './ui/RestaurantSuccess'
