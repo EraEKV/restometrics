@@ -2,9 +2,9 @@ import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { DatabaseModule } from './core/database';
+// import { DatabaseModule } from './core/database';
+// import { RedisModule } from './core/redis';
 import { LoggerModule } from './core/logger';
-import { RedisModule } from './core/redis';
 import { RestaurantsModule, AuthModule } from './modules';
 import { PredictionsModule } from './modules/predictions';
 import { ExternalDataModule } from './modules/external-data';
@@ -15,9 +15,9 @@ import { ExternalDataModule } from './modules/external-data';
       isGlobal: true,
       envFilePath: '.env',
     }),
-    DatabaseModule,
+    // DatabaseModule,
     LoggerModule,
-    RedisModule,
+    // RedisModule,
     ExternalDataModule,
     AuthModule,
     RestaurantsModule,
