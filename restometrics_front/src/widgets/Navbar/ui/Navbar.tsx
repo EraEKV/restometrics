@@ -3,6 +3,7 @@ import { useThemeStore } from '@/shared/model/themeStore'
 import { Button } from '@/shared/ui/button'
 import { Moon, Sun, Plus } from 'lucide-react'
 import { NotificationPopover } from '@/features/notifications'
+import Link from 'next/link'
 
 export const Navbar = () => {
   const { theme, toggleTheme } = useThemeStore()
@@ -30,13 +31,17 @@ export const Navbar = () => {
             size="sm" 
             className="hidden sm:flex items-center gap-2 bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
           >
-            <Plus className="h-4 w-4" />
-            <span className="font-medium">Новый ресторан</span>
+            <Link href={'/restaurant-form'}>
+              <Plus className="h-4 w-4" />
+              <span className="font-medium">Новый ресторан</span>
+            </Link>
           </Button>
 
           <Button variant="default" size="icon" className="sm:hidden bg-gradient-to-r from-primary to-primary/90 shadow-lg">
-            <Plus className="h-4 w-4" />
-            <span className="sr-only">Add New</span>
+            <Link href={'/restaurant-form'}>
+              <Plus className="h-4 w-4" />
+              <span className="sr-only">Новый ресторан</span>
+            </Link>
           </Button>
 
 
