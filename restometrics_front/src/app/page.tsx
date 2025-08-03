@@ -16,7 +16,7 @@ export default function Home() {
         </div>
         <Link href="/restaurant-form" passHref>
           <Button className="w-64 h-16 text-xl font-semibold shadow-lg hover:scale-105 transition-transform duration-200">
-        Начать работу
+            Начать работу
           </Button>
         </Link>
     </div>

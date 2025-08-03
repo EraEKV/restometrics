@@ -31,16 +31,16 @@ export const Navbar = () => {
             size="sm" 
             className="hidden sm:flex items-center gap-2 bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
           >
-            <Link href={'/restaurant-form'}>
+            <Link className='flex items-center space-x-2' href={'/restaurant-form'}>
+            
               <Plus className="h-4 w-4" />
               <span className="font-medium">Новый ресторан</span>
             </Link>
           </Button>
 
           <Button variant="default" size="icon" className="sm:hidden bg-gradient-to-r from-primary to-primary/90 shadow-lg">
-            <Link href={'/restaurant-form'}>
+            <Link className='flex items-center space-x-2' href={'/restaurant-form'}>
               <Plus className="h-4 w-4" />
-              <span className="sr-only">Новый ресторан</span>
             </Link>
           </Button>
 
